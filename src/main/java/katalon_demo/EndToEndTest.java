@@ -27,9 +27,7 @@ public class EndToEndTest extends DriverManager {
         logoutPage.openDropDownMenu();
         Thread.sleep(500);
         logoutPage.logout();
-        System.out.println("Asserting if endToEnd test is successful");
         Assert.assertEquals(driver.getCurrentUrl(), "https://katalon-demo-cura.herokuapp.com/");
-
 
     }
 }
