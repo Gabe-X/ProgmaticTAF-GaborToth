@@ -17,17 +17,20 @@ public class AppointmentPage {
 
     public void applyReadmissionBox(){
         WebElement applyBox = driver.findElement(tickBoxApply);
+        System.out.println("Filling hospital Readmission box");
         applyBox.click();
 
     }
 
     public void fillVisitDate(String visitDate) {
         WebElement fillVisitDate = driver.findElement(visitDateBy);
+        System.out.println("Picking a date for the visist");
         fillVisitDate.sendKeys(visitDate);
     }
 
     public void BookAppointment(){
         WebElement pressBookAppointmentButton = driver.findElement(bookAppointmentButtonBy);
+        System.out.println("Booking Appointment by pressing the 'Book Appointment' button");
         pressBookAppointmentButton.click();
     }
 

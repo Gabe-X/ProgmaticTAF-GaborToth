@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class ProfilPageTests extends DriverManager {
 
-    @Test
+    @Test(groups = {"appointment"}, description = "Checking if we can load profile page")
     public void loadProfilePage() {
         driver.get("https://katalon-demo-cura.herokuapp.com/profile.php#profile");
 

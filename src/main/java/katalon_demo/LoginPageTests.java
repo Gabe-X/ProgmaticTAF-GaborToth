@@ -10,12 +10,12 @@ import org.testng.annotations.Test;
 
 public class LoginPageTests extends DriverManager {
 
-    @Test
+    @Test(groups = {"debugging"}, description = "Checking if getting an error message with wrong inputs")
     public void fillLogin() {
         driver.navigate().to("https://katalon-demo-cura.herokuapp.com/profile.php#login");
 
         LoginPage loginInput = new LoginPage(driver);
-        loginInput.fillName("Gabor Toth");
+        loginInput.fillName("Gabe The Almighty");
         loginInput.fillPassword("42pr0");
         loginInput.pressLogin();
         WebElement errorMsg = driver.findElement(By.xpath("//*[@id=\"login\"]/div/div/div[1]/p[2]"));

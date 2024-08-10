@@ -18,10 +18,11 @@ public class HomePage {
         this.driver = driver;
     }
 
-    public void findMakeAppointmentButton() {
+    public void clickMakeAppointmentButton() {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(2000));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(AppointmentButtonBy));
+        System.out.println("Checking if button 'Make Appointment' is clickable");
         element.click();
 
 

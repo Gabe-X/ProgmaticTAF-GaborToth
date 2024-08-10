@@ -18,16 +18,19 @@ public class ProfilPage extends DriverManager {
 
     public void fillName(String name) {
         WebElement nameInput = driver.findElement(nameInputBy);
+        System.out.println("Fill out name field");
         nameInput.sendKeys(name);
     }
 
     public void fillPassword(String pw) {
         WebElement nameInput = driver.findElement(pwInputBy);
+        System.out.println("Fill out password field");
         nameInput.sendKeys(pw);
     }
 
     public void pressLogin() {
         WebElement pressLoginButton = driver.findElement(loginButtonBy);
+        System.out.println("Click login button");
         pressLoginButton.click();
 
     }
