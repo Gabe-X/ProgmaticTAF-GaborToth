@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class AppointmentPage {
 
-    private static final By makeAppointmentButtonBy = By.id("btn-make-appointment");
+    private static final By bookAppointmentButtonBy = By.id("btn-book-appointment");
     private final By tickBoxApply = By.id("chk_hospotal_readmission");
     private final WebDriver driver;
     private final By visitDateBy = By.id("txt_visit_date");
@@ -15,10 +15,10 @@ public class AppointmentPage {
         this.driver = driver;
     }
 
-    private void applyReadmissionBox() throws InterruptedException {
+    public void applyReadmissionBox(){
         WebElement applyBox = driver.findElement(tickBoxApply);
         applyBox.click();
-        Thread.sleep(1000);
+
     }
 
     public void fillVisitDate(String visitDate) {
@@ -26,5 +26,9 @@ public class AppointmentPage {
         fillVisitDate.sendKeys(visitDate);
     }
 
+    public void BookAppointment(){
+        WebElement pressBookAppointmentButton = driver.findElement(bookAppointmentButtonBy);
+        pressBookAppointmentButton.click();
+    }
 
 }

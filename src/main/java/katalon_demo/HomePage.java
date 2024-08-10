@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+
 
 import java.time.Duration;
 
@@ -20,7 +20,6 @@ public class HomePage {
 
     public void findMakeAppointmentButton() {
 
-        WebElement makeAppointmentButton = driver.findElement(AppointmentButtonBy);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(2000));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(AppointmentButtonBy));
         element.click();
