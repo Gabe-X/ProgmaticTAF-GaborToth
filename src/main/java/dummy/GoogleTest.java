@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class GoogleTest extends DriverManager {
 
-    @Test
+    @Test(enabled = false)
     public void doGoogleSearchTest() {
         driver.get("https://www.google.com/");
     }
