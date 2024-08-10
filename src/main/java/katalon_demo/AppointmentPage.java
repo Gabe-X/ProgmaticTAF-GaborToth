@@ -24,7 +24,7 @@ public class AppointmentPage {
 
     public void fillVisitDate(String visitDate) {
         WebElement fillVisitDate = driver.findElement(visitDateBy);
-        System.out.println("Picking a date for the visist");
+        System.out.println("Picking a date for the visit");
         fillVisitDate.sendKeys(visitDate);
     }
 
