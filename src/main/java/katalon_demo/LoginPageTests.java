@@ -7,7 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-
 public class LoginPageTests extends DriverManager {
 
     @Test(groups = {"debugging"}, description = "Checking if getting an error message with wrong inputs")
@@ -23,7 +22,6 @@ public class LoginPageTests extends DriverManager {
 
 
     }
-
 
 
 }

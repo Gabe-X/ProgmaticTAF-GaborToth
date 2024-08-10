@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class EndToEndTest extends DriverManager {
 
-    @Test(groups ={"regression"}, description = "Running full test from login to booking, then logout")
+    @Test(groups = {"regression"}, description = "Running full test from login to booking, then logout")
     public void endToEndTest() throws InterruptedException {
 
         driver.get("https://katalon-demo-cura.herokuapp.com/");
@@ -14,7 +14,7 @@ public class EndToEndTest extends DriverManager {
         HomePage homePage = new HomePage(driver);
         ProfilPage profilPage = new ProfilPage(driver);
         AppointmentPage appointmentPage = new AppointmentPage(driver);
-        LogoutPage  logoutPage  = new LogoutPage(driver);
+        LogoutPage logoutPage = new LogoutPage(driver);
 
 
         homePage.clickMakeAppointmentButton();

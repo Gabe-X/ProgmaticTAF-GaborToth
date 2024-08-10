@@ -15,7 +15,7 @@ public class AppointmentPage {
         this.driver = driver;
     }
 
-    public void applyReadmissionBox(){
+    public void applyReadmissionBox() {
         WebElement applyBox = driver.findElement(tickBoxApply);
         System.out.println("Filling hospital Readmission box");
         applyBox.click();
@@ -28,7 +28,7 @@ public class AppointmentPage {
         fillVisitDate.sendKeys(visitDate);
     }
 
-    public void BookAppointment(){
+    public void BookAppointment() {
         WebElement pressBookAppointmentButton = driver.findElement(bookAppointmentButtonBy);
         System.out.println("Booking Appointment by pressing the 'Book Appointment' button");
         pressBookAppointmentButton.click();

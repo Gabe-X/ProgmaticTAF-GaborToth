@@ -21,6 +21,6 @@ public class AppointmentPageTests extends DriverManager {
         appointmentPage.fillVisitDate("10/8/2024");
         appointmentPage.BookAppointment();
         System.out.println("Asserting if booking works");
-        Assert.assertEquals(driver.getCurrentUrl(),"https://katalon-demo-cura.herokuapp.com/appointment.php#summary");
+        Assert.assertEquals(driver.getCurrentUrl(), "https://katalon-demo-cura.herokuapp.com/appointment.php#summary");
     }
 }

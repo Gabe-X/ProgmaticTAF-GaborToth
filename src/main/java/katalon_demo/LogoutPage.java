@@ -14,13 +14,13 @@ public class LogoutPage {
         this.driver = driver;
     }
 
-    public void openDropDownMenu (){
+    public void openDropDownMenu() {
         WebElement clickDropDownMenu = driver.findElement(menuDropDownBy);
         System.out.println("Opening dropdown menu");
         clickDropDownMenu.click();
     }
 
-    public void logout(){
+    public void logout() {
         WebElement pressLogout = driver.findElement(logoutBy);
         System.out.println("Logging out of webpage");
         pressLogout.click();
